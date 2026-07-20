@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonny Morin — Adventures of a Chicano Spanish Teacher, Mexico and Beyond</title>
+<meta name="description" content="The official website of travel memoirist Sonny Morin. Thirty years of backpacking, scuba diving, and cultural exploration across Mexico, the Western Hemisphere, and Micronesia.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Crimson+Pro:ital,wght@0,400;0,500;1,400&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink:      '#102E36', /* deepest sea */
+        ocean:    '#0E5E6F', /* mid-depth teal */
+        turquoise:'#2BB3B1', /* lagoon */
+        lagoon:   '#E3F4F2', /* pale lagoon tint */
+        sand:     '#F8F2E6', /* warm sand */
+        gold:     '#E0A439', /* cover-title gold */
+        goldsoft: '#F3D9A4',
+        coral:    '#DE7356'
+      },
+      fontFamily: {
+        display: ['"Yeseva One"', 'serif'],
+        prose:   ['"Crimson Pro"', 'serif'],
+        ui:      ['Karla', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  .eyebrow { letter-spacing: .22em; }
+  .cover-shadow { box-shadow: 0 24px 60px -18px rgba(14,94,111,.55), 0 8px 20px -8px rgba(16,46,54,.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .float-soft { animation: floatSoft 7s ease-in-out infinite; }
+    @keyframes floatSoft { 0%,100% { transform: translateY(0) rotate(-1.5deg);} 50% { transform: translateY(-10px) rotate(-1.5deg);} }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+  }
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid #E0A439; outline-offset: 3px; border-radius: 4px;
+  }
+</style>
+</head>
+
+<body class="font-ui text-ink bg-sand">
+
+<!-- ======================= NAV ======================= -->
+<header class="sticky top-0 z-50 bg-sand/90 backdrop-blur border-b border-ocean/10">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
+    <a href="#top" class="font-display text-lg sm:text-xl text-ocean">Sonny&nbsp;Morin</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-ink/70">
+      <a href="#book" class="hover:text-ocean transition-colors">The Book</a>
+      <a href="#praise" class="hover:text-ocean transition-colors">Praise</a>
+      <a href="#author" class="hover:text-ocean transition-colors">The Author</a>
+      <a href="#contact" class="hover:text-ocean transition-colors">Contact</a>
+    </div>
+    <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
+       target="_blank" rel="noopener"
+       class="bg-gold hover:bg-[#c8912f] text-ink font-bold text-sm px-4 py-2 rounded-full transition-colors shadow-sm">
+      Buy on Amazon
+    </a>
+  </nav>
+</header>
+
+<!-- ======================= HERO — sea level ======================= -->
+<section id="top" class="relative overflow-hidden bg-gradient-to-b from-[#CDEDF3] via-lagoon to-sand">
+  <!-- faint sun rays -->
+  <div class="pointer-events-none absolute -top-32 right-0 w-[36rem] h-[36rem] rounded-full bg-goldsoft/40 blur-3xl"></div>
+  <div class="pointer-events-none absolute top-24 -left-40 w-[28rem] h-[28rem] rounded-full bg-turquoise/20 blur-3xl"></div>
+
+  <div class="relative max-w-6xl mx-auto px-5 pt-14 pb-20 sm:pt-20 sm:pb-28 grid md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-7 order-2 md:order-1">
+      <p class="eyebrow text-xs font-bold uppercase text-ocean mb-5">A Memoir of Travel &amp; Adventure</p>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-ink">
+        Adventures of a <span class="text-ocean">Chicano Spanish Teacher</span>,<br class="hidden sm:block">
+        <span class="text-gold drop-shadow-sm">Mexico and Beyond</span>
+      </h1>
+      <p class="font-prose text-xl sm:text-2xl text-ink/80 mt-6 max-w-xl leading-relaxed">
+        Thirty years. Two hemispheres. One backpack. A Chicano educator's true stories of ancient ruins, open roads, and the world beneath the waves.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-gold hover:bg-[#c8912f] text-ink font-bold px-7 py-3.5 rounded-full text-base shadow-lg shadow-gold/30 transition-transform hover:-translate-y-0.5">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2a1 1 0 0 0-1 1v18a1 1 0 0 0 1.55.83L12 18.6l5.45 3.23A1 1 0 0 0 19 21V3a1 1 0 0 0-1-1H6z"/></svg>
+          Buy on Amazon
+        </a>
+        <a href="#book" class="font-semibold text-ocean hover:text-ink underline underline-offset-4 decoration-turquoise/60 transition-colors">
+          Read the story ↓
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-ink/50 font-medium">Available now in paperback · Memoir · Travel &amp; Adventure</p>
+    </div>
+
+    <div class="md:col-span-5 order-1 md:order-2 flex justify-center">
+      <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/sonnymorinbook.jpg"
+           alt="Book cover of Adventures of a Chicano Spanish Teacher, Mexico and Beyond by Sonny Morin — a turquoise coastal scene"
+           class="float-soft cover-shadow w-56 sm:w-64 lg:w-72 rounded-md ring-1 ring-ink/10" loading="eager">
+    </div>
+  </div>
+
+  <!-- wave divider into lagoon -->
+  <svg class="block w-full text-lagoon -mb-px" viewBox="0 0 1440 70" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,45 L1440,70 L0,70 Z"/>
+  </svg>
+</section>
+
+<!-- ======================= ABOUT THE BOOK — the lagoon ======================= -->
+<section id="book" class="bg-lagoon">
+  <div class="max-w-6xl mx-auto px-5 py-20 sm:py-24">
+    <div class="max-w-3xl fade-up">
+      <p class="eyebrow text-xs font-bold uppercase text-ocean mb-3">La Historia · About the Book</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-ink">A lifetime of journeys, told one chapter at a time</h2>
+    </div>
+
+    <div class="grid md:grid-cols-12 gap-10 mt-10">
+      <div class="md:col-span-7 font-prose text-lg sm:text-xl leading-relaxed text-ink/85 space-y-5 fade-up">
+        <p>
+          Spanning more than thirty years of unforgettable journeys, <em>Adventures of a Chicano Spanish Teacher, Mexico and Beyond</em> follows Sonny Morin's backpacking, scuba diving, and sightseeing adventures across the Western Hemisphere and Micronesia. From ancient ruins rising out of the jungle to vibrant city plazas alive with music and mercado chatter, every chapter captures the thrill of arriving somewhere new — and the deeper joy of understanding it.
+        </p>
+        <p>
+          Beneath the surface, the adventure continues. Morin descends into crystal-clear waters teeming with life, trading the classroom for coral reefs and cenotes, and returning with stories most travelers only dream about.
+        </p>
+        <p>
+          Blending personal reflection with pulse-quickening experience, this memoir is more than a travelogue. It is an open invitation — from a teacher who spent his career opening doors to language and culture — to share in a lifetime of adventure, one border crossing, one dive, one unforgettable meal at a time.
+        </p>
+      </div>
+
+      <!-- passport-stamp stat strip -->
+      <div class="md:col-span-5 fade-up">
+        <div class="grid gap-4">
+          <div class="bg-sand rounded-xl p-5 border-2 border-dashed border-ocean/25">
+            <p class="font-display text-3xl text-ocean">30+ years</p>
+            <p class="text-sm font-semibold text-ink/60 mt-1">of journeys on the road and under the sea</p>
+          </div>
+          <div class="bg-sand rounded-xl p-5 border-2 border-dashed border-ocean/25">
+            <p class="font-display text-3xl text-turquoise">2 hemispheres</p>
+            <p class="text-sm font-semibold text-ink/60 mt-1">Mexico, the Americas &amp; the islands of Micronesia</p>
+          </div>
+          <div class="bg-sand rounded-xl p-5 border-2 border-dashed border-ocean/25">
+            <p class="font-display text-3xl text-gold">1 backpack</p>
+            <p class="text-sm font-semibold text-ink/60 mt-1">ruins, reefs, road towns &amp; the cultures in between</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- wave divider into sand -->
+  <svg class="block w-full text-sand -mb-px" viewBox="0 0 1440 70" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,30 C260,70 520,5 780,35 C1040,65 1240,15 1440,40 L1440,70 L0,70 Z"/>
+  </svg>
+</section>
+
+<!-- ======================= PRAISE ======================= -->
+<section id="praise" class="bg-sand">
+  <div class="max-w-6xl mx-auto px-5 py-20 sm:py-24">
+    <div class="max-w-3xl fade-up">
+      <p class="eyebrow text-xs font-bold uppercase text-ocean mb-3">Palabras de Lectores · Praise for the Book</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-ink">What readers are saying</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <!-- Review placeholder cards — replace quotes & attributions as real reviews arrive -->
+      <figure class="fade-up bg-white rounded-2xl p-7 shadow-sm ring-1 ring-ocean/10 flex flex-col">
+        <div class="text-gold text-xl tracking-widest" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="font-prose text-lg leading-relaxed text-ink/85 mt-4 flex-1">
+          "Reading this felt like traveling beside a friend who knows every back road in Mexico — and exactly where to stop for lunch."
+        </blockquote>
+        <figcaption class="mt-5 text-sm font-semibold text-ink/50">— Reader review, Amazon</figcaption>
+      </figure>
+
+      <figure class="fade-up bg-white rounded-2xl p-7 shadow-sm ring-1 ring-ocean/10 flex flex-col">
+        <div class="text-gold text-xl tracking-widest" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="font-prose text-lg leading-relaxed text-ink/85 mt-4 flex-1">
+          "The diving chapters are breathtaking. You can almost feel the water. A memoir written with a teacher's heart and an adventurer's spirit."
+        </blockquote>
+        <figcaption class="mt-5 text-sm font-semibold text-ink/50">— Reader review, Amazon</figcaption>
+      </figure>
+
+      <figure class="fade-up bg-white rounded-2xl p-7 shadow-sm ring-1 ring-ocean/10 flex flex-col sm:col-span-2 lg:col-span-1">
+        <div class="text-gold text-xl tracking-widest" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="font-prose text-lg leading-relaxed text-ink/85 mt-4 flex-1">
+          "A warm, honest celebration of culture, language, and curiosity. I finished it wanting to renew my passport."
+        </blockquote>
+        <figcaption class="mt-5 text-sm font-semibold text-ink/50">— Reader review, Amazon</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- wave divider into the deep -->
+  <svg class="block w-full text-ocean -mb-px" viewBox="0 0 1440 70" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,45 C280,5 560,70 840,35 C1100,5 1280,55 1440,30 L1440,70 L0,70 Z"/>
+  </svg>
+</section>
+
+<!-- ======================= ABOUT THE AUTHOR — the deep, with Guadalupe mandorla ======================= -->
+<section id="author" class="relative bg-ocean overflow-hidden">
+  <!-- Tasteful artistic Virgin of Guadalupe motif: silhouetted figure within a radiant golden mandorla, roses at the base -->
+  <div class="absolute inset-0 flex items-center justify-center md:justify-end md:pr-[8%] pointer-events-none" aria-hidden="true">
+    <svg class="h-[130%] max-h-[46rem] opacity-25 md:opacity-40" viewBox="0 0 400 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- radiating rays of the mandorla -->
+      <g stroke="#E0A439" stroke-width="3" stroke-linecap="round">
+        <g id="rays">
+          <line x1="200" y1="280" x2="200" y2="10"/>
+          <line x1="200" y1="280" x2="330" y2="40"/>
+          <line x1="200" y1="280" x2="70"  y2="40"/>
+          <line x1="200" y1="280" x2="385" y2="140"/>
+          <line x1="200" y1="280" x2="15"  y2="140"/>
+          <line x1="200" y1="280" x2="395" y2="280"/>
+          <line x1="200" y1="280" x2="5"   y2="280"/>
+          <line x1="200" y1="280" x2="385" y2="420"/>
+          <line x1="200" y1="280" x2="15"  y2="420"/>
+          <line x1="200" y1="280" x2="330" y2="520"/>
+          <line x1="200" y1="280" x2="70"  y2="520"/>
+          <line x1="200" y1="280" x2="200" y2="550"/>
+          <line x1="200" y1="280" x2="300" y2="20"/>
+          <line x1="200" y1="280" x2="100" y2="20"/>
+          <line x1="200" y1="280" x2="370" y2="90"/>
+          <line x1="200" y1="280" x2="30"  y2="90"/>
+          <line x1="200" y1="280" x2="395" y2="210"/>
+          <line x1="200" y1="280" x2="5"   y2="210"/>
+          <line x1="200" y1="280" x2="395" y2="350"/>
+          <line x1="200" y1="280" x2="5"   y2="350"/>
+          <line x1="200" y1="280" x2="360" y2="480"/>
+          <line x1="200" y1="280" x2="40"  y2="480"/>
+        </g>
+      </g>
+      <!-- almond-shaped aureole -->
+      <ellipse cx="200" cy="280" rx="118" ry="215" fill="#0E5E6F" stroke="#E0A439" stroke-width="4"/>
+      <ellipse cx="200" cy="280" rx="103" ry="198" fill="none" stroke="#F3D9A4" stroke-width="1.5" stroke-dasharray="2 7"/>
+      <!-- silhouetted figure: veiled head, praying hands, flowing mantle -->
+      <g fill="#102E36">
+        <path d="M200 118 c-26 0 -44 20 -44 46 c0 12 4 22 10 30 c-20 14 -34 40 -40 76 c-8 50 -6 108 8 150 c8 24 24 38 66 38 c42 0 58 -14 66 -38 c14 -42 16 -100 8 -150 c-6 -36 -20 -62 -40 -76 c6 -8 10 -18 10 -30 c0 -26 -18 -46 -44 -46 z"/>
+      </g>
+      <!-- star pattern on the mantle -->
+      <g fill="#E0A439" opacity=".8">
+        <circle cx="168" cy="250" r="3"/><circle cx="236" cy="262" r="3"/>
+        <circle cx="158" cy="316" r="3"/><circle cx="244" cy="330" r="3"/>
+        <circle cx="176" cy="386" r="3"/><circle cx="228" cy="398" r="3"/>
+      </g>
+      <!-- praying hands mark -->
+      <path d="M200 268 l-9 22 h18 z" fill="#E0A439"/>
+      <!-- crescent & roses at the base -->
+      <path d="M140 462 q60 34 120 0 q-60 58 -120 0 z" fill="#E0A439"/>
+      <g stroke="#F3D9A4" stroke-width="2" fill="none">
+        <circle cx="130" cy="470" r="8"/><circle cx="130" cy="470" r="3"/>
+        <circle cx="270" cy="470" r="8"/><circle cx="270" cy="470" r="3"/>
+        <circle cx="200" cy="500" r="8"/><circle cx="200" cy="500" r="3"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-5 py-20 sm:py-28">
+    <div class="max-w-xl fade-up">
+      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">El Autor · About the Author</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-white">Sonny Morin</h2>
+      <div class="font-prose text-lg sm:text-xl leading-relaxed text-white/90 mt-6 space-y-5">
+        <p>
+          Sonny Morin is a retired Spanish teacher and travel memoirist from Central Texas. Raised in a small South Texas town, he earned a Master of Arts in Teaching from Texas State University and dedicated his career to teaching Spanish — and to sharing his lifelong passion for language, history, and culture.
+        </p>
+        <p>
+          As a Chicano educator, he spent more than three decades exploring Mexico and destinations far beyond it, carrying his classroom's curiosity everywhere his backpack and dive gear could take him.
+        </p>
+        <p>
+          Since retiring in 2017, he has kept writing. He is currently at work on a second book — a reflection on his years in the classroom and the students who made them unforgettable.
+        </p>
+      </div>
+      <a href="#contact" class="inline-block mt-8 font-semibold text-goldsoft hover:text-white underline underline-offset-4 decoration-gold/60 transition-colors">
+        Get notified when the next book arrives →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FOOTER / CONTACT — deepest water ======================= -->
+<footer id="contact" class="bg-ink text-white">
+  <div class="max-w-6xl mx-auto px-5 py-16 sm:py-20 grid md:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">Mantente en Contacto · Stay in Touch</p>
+      <h2 class="font-display text-2xl sm:text-3xl">Subscribe for updates</h2>
+      <p class="font-prose text-lg text-white/75 mt-3 max-w-md">
+        Be the first to know when Sonny's second book — a memoir of three decades in the classroom — is released.
+      </p>
+      <!-- Newsletter placeholder: connect to your email service of choice -->
+      <form action="#" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-md" onsubmit="event.preventDefault(); this.querySelector('button').textContent='¡Gracias!';">
+        <label class="sr-only" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" required placeholder="you@example.com"
+               class="flex-1 rounded-full px-5 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none">
+        <button type="submit" class="bg-gold hover:bg-[#c8912f] text-ink font-bold px-6 py-3 rounded-full transition-colors">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <div class="fade-up md:text-right">
+      <p class="font-display text-xl text-white">Sonny Morin</p>
+      <p class="text-white/60 text-sm mt-1">Author · Travel Memoirist · Retired Spanish Teacher</p>
+      <div class="mt-6 space-y-2 text-white/80">
+        <p><a href="mailto:sonnymorin68@gmail.com" class="hover:text-goldsoft transition-colors">sonnymorin68@gmail.com</a></p>
+        <p><a href="tel:+15128551756" class="hover:text-goldsoft transition-colors">(512)&nbsp;855-1756</a></p>
+      </div>
+      <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
+         target="_blank" rel="noopener"
+         class="inline-block mt-6 bg-white/10 hover:bg-gold hover:text-ink border border-white/20 font-bold text-sm px-5 py-2.5 rounded-full transition-colors">
+        Buy on Amazon
+      </a>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-5 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
+      <p>© 2026 Sonny Morin · www.sonnymorin.com · All rights reserved.</p>
+      <p>Adventures of a Chicano Spanish Teacher, Mexico and Beyond</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Scroll-reveal, respects reduced motion */
+if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.fade-up').forEach(el => el.classList.add('in'));
+}
+</script>
+
+</body>
+</html>
