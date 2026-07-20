@@ -273,7 +273,7 @@ tailwind.config = {
         </p>
       </div>
       <a href="#contact" class="inline-block mt-8 font-semibold text-goldsoft hover:text-white underline underline-offset-4 decoration-gold/60 transition-colors">
-        Get notified when the next book arrives →
+        Say hello — send Sonny a message →
       </a>
     </div>
   </div>
@@ -283,18 +283,31 @@ tailwind.config = {
 <footer id="contact" class="bg-ink text-white">
   <div class="max-w-6xl mx-auto px-5 py-16 sm:py-20 grid md:grid-cols-2 gap-12">
     <div class="fade-up">
-      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">Mantente en Contacto · Stay in Touch</p>
-      <h2 class="font-display text-2xl sm:text-3xl">Subscribe for updates</h2>
+      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">Mantente en Contacto · Get in Touch</p>
+      <h2 class="font-display text-2xl sm:text-3xl">Send Sonny a message</h2>
       <p class="font-prose text-lg text-white/75 mt-3 max-w-md">
-        Be the first to know when Sonny's second book — a memoir of three decades in the classroom — is released.
+        Questions about the book, speaking invitations, or a travel story of your own to share — Sonny would love to hear from you.
       </p>
-      <!-- Newsletter placeholder: connect to your email service of choice -->
-      <form action="#" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-md" onsubmit="event.preventDefault(); this.querySelector('button').textContent='¡Gracias!';">
-        <label class="sr-only" for="nl-email">Email address</label>
-        <input id="nl-email" type="email" required placeholder="you@example.com"
-               class="flex-1 rounded-full px-5 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none">
-        <button type="submit" class="bg-gold hover:bg-[#c8912f] text-ink font-bold px-6 py-3 rounded-full transition-colors">
-          Subscribe
+      <!-- Contact form placeholder: wire to CF7 / your mail handler on the live build -->
+      <form action="#" class="mt-6 grid gap-4 max-w-md"
+            onsubmit="event.preventDefault(); this.querySelector('button').textContent='¡Gracias! Message sent.';">
+        <div>
+          <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-name">Your name</label>
+          <input id="ct-name" name="name" type="text" required placeholder="Jane Traveler"
+                 class="w-full rounded-xl px-4 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-email">Email address</label>
+          <input id="ct-email" name="email" type="email" required placeholder="you@example.com"
+                 class="w-full rounded-xl px-4 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-message">Message</label>
+          <textarea id="ct-message" name="message" rows="4" required placeholder="Hi Sonny — I just finished the book and..."
+                    class="w-full rounded-xl px-4 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none resize-y"></textarea>
+        </div>
+        <button type="submit" class="justify-self-start bg-gold hover:bg-[#c8912f] text-ink font-bold px-7 py-3 rounded-full transition-colors">
+          Send message
         </button>
       </form>
     </div>
