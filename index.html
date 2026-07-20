@@ -194,87 +194,131 @@ tailwind.config = {
     </div>
   </div>
 
-  <!-- wave divider into the deep -->
-  <svg class="block w-full text-ocean -mb-px" viewBox="0 0 1440 70" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+  <!-- flat edge into the dark masthead -->
+  <svg class="block w-full text-[#22292B] -mb-px" viewBox="0 0 1440 70" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
     <path d="M0,45 C280,5 560,70 840,35 C1100,5 1280,55 1440,30 L1440,70 L0,70 Z"/>
   </svg>
 </section>
 
-<!-- ======================= ABOUT THE AUTHOR — the deep, with Guadalupe mandorla ======================= -->
-<section id="author" class="relative bg-ocean overflow-hidden">
-  <!-- Tasteful artistic Virgin of Guadalupe motif: silhouetted figure within a radiant golden mandorla, roses at the base -->
-  <div class="absolute inset-0 flex items-center justify-center md:justify-end md:pr-[8%] pointer-events-none" aria-hidden="true">
-    <svg class="h-[130%] max-h-[46rem] opacity-25 md:opacity-40" viewBox="0 0 400 560" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- radiating rays of the mandorla -->
-      <g stroke="#E0A439" stroke-width="3" stroke-linecap="round">
-        <g id="rays">
-          <line x1="200" y1="280" x2="200" y2="10"/>
-          <line x1="200" y1="280" x2="330" y2="40"/>
-          <line x1="200" y1="280" x2="70"  y2="40"/>
-          <line x1="200" y1="280" x2="385" y2="140"/>
-          <line x1="200" y1="280" x2="15"  y2="140"/>
-          <line x1="200" y1="280" x2="395" y2="280"/>
-          <line x1="200" y1="280" x2="5"   y2="280"/>
-          <line x1="200" y1="280" x2="385" y2="420"/>
-          <line x1="200" y1="280" x2="15"  y2="420"/>
-          <line x1="200" y1="280" x2="330" y2="520"/>
-          <line x1="200" y1="280" x2="70"  y2="520"/>
-          <line x1="200" y1="280" x2="200" y2="550"/>
-          <line x1="200" y1="280" x2="300" y2="20"/>
-          <line x1="200" y1="280" x2="100" y2="20"/>
-          <line x1="200" y1="280" x2="370" y2="90"/>
-          <line x1="200" y1="280" x2="30"  y2="90"/>
-          <line x1="200" y1="280" x2="395" y2="210"/>
-          <line x1="200" y1="280" x2="5"   y2="210"/>
-          <line x1="200" y1="280" x2="395" y2="350"/>
-          <line x1="200" y1="280" x2="5"   y2="350"/>
-          <line x1="200" y1="280" x2="360" y2="480"/>
-          <line x1="200" y1="280" x2="40"  y2="480"/>
-        </g>
-      </g>
-      <!-- almond-shaped aureole -->
-      <ellipse cx="200" cy="280" rx="118" ry="215" fill="#0E5E6F" stroke="#E0A439" stroke-width="4"/>
-      <ellipse cx="200" cy="280" rx="103" ry="198" fill="none" stroke="#F3D9A4" stroke-width="1.5" stroke-dasharray="2 7"/>
-      <!-- silhouetted figure: veiled head, praying hands, flowing mantle -->
-      <g fill="#102E36">
-        <path d="M200 118 c-26 0 -44 20 -44 46 c0 12 4 22 10 30 c-20 14 -34 40 -40 76 c-8 50 -6 108 8 150 c8 24 24 38 66 38 c42 0 58 -14 66 -38 c14 -42 16 -100 8 -150 c-6 -36 -20 -62 -40 -76 c6 -8 10 -18 10 -30 c0 -26 -18 -46 -44 -46 z"/>
-      </g>
-      <!-- star pattern on the mantle -->
-      <g fill="#E0A439" opacity=".8">
-        <circle cx="168" cy="250" r="3"/><circle cx="236" cy="262" r="3"/>
-        <circle cx="158" cy="316" r="3"/><circle cx="244" cy="330" r="3"/>
-        <circle cx="176" cy="386" r="3"/><circle cx="228" cy="398" r="3"/>
-      </g>
-      <!-- praying hands mark -->
-      <path d="M200 268 l-9 22 h18 z" fill="#E0A439"/>
-      <!-- crescent & roses at the base -->
-      <path d="M140 462 q60 34 120 0 q-60 58 -120 0 z" fill="#E0A439"/>
-      <g stroke="#F3D9A4" stroke-width="2" fill="none">
-        <circle cx="130" cy="470" r="8"/><circle cx="130" cy="470" r="3"/>
-        <circle cx="270" cy="470" r="8"/><circle cx="270" cy="470" r="3"/>
-        <circle cx="200" cy="500" r="8"/><circle cx="200" cy="500" r="3"/>
-      </g>
+<!-- ======================= ABOUT THE AUTHOR — book-cover style: dark masthead, torn edge, vintage Mexico map ======================= -->
+<section id="author">
+
+  <!-- Dark masthead band, echoing the cover's charcoal title block -->
+  <div class="bg-[#22292B] text-white">
+    <div class="max-w-6xl mx-auto px-5 pt-14 pb-10 sm:pt-20 text-center">
+      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3 fade-up">El Autor · About the Author</p>
+      <h2 class="font-display text-4xl sm:text-5xl tracking-wide fade-up">SONNY MORIN</h2>
+      <p class="font-prose text-lg text-white/70 mt-3 fade-up">Retired Spanish teacher · Travel memoirist · Central Texas</p>
+    </div>
+  </div>
+
+  <!-- Torn-paper edge: white sliver over the parchment map, like the cover -->
+  <div class="bg-[#22292B]" aria-hidden="true">
+    <svg class="block w-full" viewBox="0 0 1440 46" preserveAspectRatio="none">
+      <path fill="#FBF6E7" d="M0,18 L60,26 L130,14 L210,30 L290,16 L380,28 L460,12 L560,26 L650,14 L740,30 L830,16 L920,28 L1010,12 L1100,26 L1190,14 L1280,28 L1360,16 L1440,24 L1440,46 L0,46 Z"/>
+      <path fill="#E8DCBE" d="M0,26 L70,34 L150,22 L230,38 L310,24 L400,36 L480,20 L580,34 L670,22 L760,38 L850,24 L940,36 L1030,20 L1120,34 L1210,22 L1300,36 L1380,24 L1440,32 L1440,46 L0,46 Z"/>
     </svg>
   </div>
 
-  <div class="relative max-w-6xl mx-auto px-5 py-20 sm:py-28">
-    <div class="max-w-xl fade-up">
-      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">El Autor · About the Author</p>
-      <h2 class="font-display text-3xl sm:text-4xl text-white">Sonny Morin</h2>
-      <div class="font-prose text-lg sm:text-xl leading-relaxed text-white/90 mt-6 space-y-5">
-        <p>
-          Sonny Morin is a retired Spanish teacher and travel memoirist from Central Texas. Raised in a small South Texas town, he earned a Master of Arts in Teaching from Texas State University and dedicated his career to teaching Spanish — and to sharing his lifelong passion for language, history, and culture.
-        </p>
-        <p>
-          As a Chicano educator, he spent more than three decades exploring Mexico and destinations far beyond it, carrying his classroom's curiosity everywhere his backpack and dive gear could take him.
-        </p>
-        <p>
-          Since retiring in 2017, he has kept writing. He is currently at work on a second book — a reflection on his years in the classroom and the students who made them unforgettable.
-        </p>
+  <!-- Vintage atlas map area -->
+  <div class="relative bg-[#E8DCBE] overflow-hidden">
+
+    <!-- Stylized vintage map: southern US, Mexico highlighted, travel route -->
+    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <!-- parchment sea with faint graticule -->
+      <rect width="1200" height="700" fill="#E8DCBE"/>
+      <g stroke="#B9A87E" stroke-width="1" opacity=".35">
+        <line x1="0" y1="115" x2="1200" y2="115"/><line x1="0" y1="255" x2="1200" y2="255"/>
+        <line x1="0" y1="395" x2="1200" y2="395"/><line x1="0" y1="535" x2="1200" y2="535"/>
+        <line x1="170" y1="0" x2="170" y2="700"/><line x1="410" y1="0" x2="410" y2="700"/>
+        <line x1="650" y1="0" x2="650" y2="700"/><line x1="890" y1="0" x2="890" y2="700"/><line x1="1130" y1="0" x2="1130" y2="700"/>
+      </g>
+
+      <!-- Southern United States, olive-sage like the cover -->
+      <path fill="#9FAF94" stroke="#6E7F63" stroke-width="2"
+        d="M0,0 H1200 V210 L1090,222 L1000,225 L920,238 L840,248 L760,255 L700,258 L620,272
+           L560,232 L520,196 L470,168 L430,152 L370,138 L300,124 L232,116 L200,70 L185,0 Z"/>
+
+      <!-- Baja California peninsula -->
+      <path fill="#C97A3D" stroke="#8F5426" stroke-width="2"
+        d="M186,132 L214,142 L236,186 L256,238 L282,296 L300,346 L288,356 L262,314 L238,262 L214,210 L188,164 Z"/>
+
+      <!-- Mainland Mexico, burnt orange like the cover -->
+      <path fill="#C97A3D" stroke="#8F5426" stroke-width="2.5"
+        d="M232,116 L300,124 L370,138 L430,152 L470,168 L520,196 L560,232 L620,272
+           L640,320 L652,372 L672,412 L700,438 L742,458 L790,452 L846,428 L906,406
+           L942,388 L962,398 L952,452 L902,472 L858,486 L812,506 L764,506 L722,510
+           L676,494 L634,486 L590,458 L534,428 L482,388 L436,344 L402,312
+           L358,262 L322,214 L286,168 L248,136 Z"/>
+
+      <!-- coast hatching along the Pacific -->
+      <g stroke="#8F5426" stroke-width="1" opacity=".4">
+        <path d="M410,330 q-14 8 -26 4" fill="none"/>
+        <path d="M470,384 q-14 8 -26 4" fill="none"/>
+        <path d="M540,436 q-14 8 -26 4" fill="none"/>
+      </g>
+
+      <!-- Rio Grande, hinted -->
+      <path d="M430,152 Q500,190 540,214 Q580,242 620,272" fill="none" stroke="#6E88A5" stroke-width="2.5" opacity=".6"/>
+
+      <!-- US city labels, atlas style -->
+      <g font-family="'Karla',sans-serif" font-size="15" fill="#3E4A3B">
+        <circle cx="600" cy="192" r="4" fill="#3E4A3B"/><text x="612" y="197">San Antonio</text>
+        <circle cx="432" cy="150" r="4" fill="#3E4A3B"/><text x="444" y="144">El Paso</text>
+        <circle cx="702" cy="242" r="4" fill="#3E4A3B"/><text x="714" y="238">Houston</text>
+      </g>
+
+      <!-- Mexico city labels -->
+      <g font-family="'Karla',sans-serif" font-size="15" fill="#4A2E14">
+        <circle cx="560" cy="300" r="4" fill="#4A2E14"/><text x="572" y="296">Monterrey</text>
+        <circle cx="404" cy="332" r="4" fill="#4A2E14"/><text x="330" y="356">Mazatlán</text>
+        <circle cx="500" cy="402" r="4" fill="#4A2E14"/><text x="418" y="424">Guadalajara</text>
+        <circle cx="614" cy="446" r="4" fill="#4A2E14"/><text x="590" y="472">Mexico City</text>
+        <circle cx="688" cy="428" r="4" fill="#4A2E14"/><text x="700" y="424">Veracruz</text>
+        <circle cx="716" cy="486" r="4" fill="#4A2E14"/><text x="700" y="510">Oaxaca</text>
+        <circle cx="890" cy="410" r="4" fill="#4A2E14"/><text x="852" y="400">Mérida</text>
+        <circle cx="948" cy="404" r="4" fill="#4A2E14"/><text x="960" y="400">Cancún</text>
+      </g>
+
+      <!-- big MEXICO label, like the cover -->
+      <text x="470" y="360" font-family="'Yeseva One',serif" font-size="52" letter-spacing="10" fill="#4A2E14" opacity=".85">MEXICO</text>
+      <text x="770" y="330" font-family="'Crimson Pro',serif" font-style="italic" font-size="20" fill="#6E7F63">G. of Mexico</text>
+
+      <!-- Sonny's route: dashed line stitched through his destinations -->
+      <g fill="none" stroke="#B3492F" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round">
+        <path d="M600,192 Q580,250 560,300 Q560,380 614,446 Q660,480 716,486 Q800,470 890,410 Q920,404 948,404"/>
+        <path d="M948,404 Q1060,430 1180,480" />
+      </g>
+      <text x="990" y="470" font-family="'Crimson Pro',serif" font-style="italic" font-size="18" fill="#B3492F" transform="rotate(14 990 470)">…and beyond →</text>
+
+      <!-- compass rose -->
+      <g transform="translate(1080,120)" stroke="#6E7F63" fill="#6E7F63">
+        <circle r="34" fill="none" stroke-width="2"/>
+        <path d="M0,-30 L7,0 L0,30 L-7,0 Z"/>
+        <path d="M-30,0 L0,-7 L30,0 L0,7 Z" opacity=".55"/>
+        <text y="-42" text-anchor="middle" font-family="'Karla',sans-serif" font-size="15" stroke="none">N</text>
+      </g>
+    </svg>
+
+    <!-- Bio card, styled like a map legend -->
+    <div class="relative max-w-6xl mx-auto px-5 py-16 sm:py-24">
+      <div class="max-w-xl fade-up bg-[#FBF6E7]/95 border-2 border-[#8F5426]/30 rounded-md shadow-xl shadow-[#4A2E14]/15 p-7 sm:p-10">
+        <p class="eyebrow text-[11px] font-bold uppercase text-[#8F5426] mb-4">Cartografía de una vida · The map of a life</p>
+        <div class="font-prose text-lg sm:text-xl leading-relaxed text-[#3A3226] space-y-5">
+          <p>
+            Sonny Morin is a retired Spanish teacher and travel memoirist from Central Texas. Raised in a small South Texas town, he earned a Master of Arts in Teaching from Texas State University and dedicated his career to teaching Spanish — and to sharing his lifelong passion for language, history, and culture.
+          </p>
+          <p>
+            As a Chicano educator, he spent more than three decades exploring Mexico and destinations far beyond it, carrying his classroom's curiosity everywhere his backpack and dive gear could take him.
+          </p>
+          <p>
+            Since retiring in 2017, he has kept writing. He is currently at work on a second book — a reflection on his years in the classroom and the students who made them unforgettable.
+          </p>
+        </div>
+        <a href="#contact" class="inline-block mt-7 font-semibold text-[#B3492F] hover:text-[#8F5426] underline underline-offset-4 decoration-[#B3492F]/50 transition-colors">
+          Say hello — send Sonny a message →
+        </a>
       </div>
-      <a href="#contact" class="inline-block mt-8 font-semibold text-goldsoft hover:text-white underline underline-offset-4 decoration-gold/60 transition-colors">
-        Say hello — send Sonny a message →
-      </a>
     </div>
   </div>
 </section>
