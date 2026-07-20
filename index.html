@@ -279,51 +279,99 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ======================= FOOTER / CONTACT — deepest water ======================= -->
+<!-- ======================= CONTACT — deepest water ======================= -->
 <footer id="contact" class="bg-ink text-white">
-  <div class="max-w-6xl mx-auto px-5 py-16 sm:py-20 grid md:grid-cols-2 gap-12">
-    <div class="fade-up">
+  <div class="max-w-6xl mx-auto px-5 py-16 sm:py-20">
+
+    <!-- Section header, centered -->
+    <div class="max-w-2xl mx-auto text-center fade-up">
       <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">Mantente en Contacto · Get in Touch</p>
-      <h2 class="font-display text-2xl sm:text-3xl">Send Sonny a message</h2>
-      <p class="font-prose text-lg text-white/75 mt-3 max-w-md">
+      <h2 class="font-display text-3xl sm:text-4xl">Send Sonny a message</h2>
+      <p class="font-prose text-lg sm:text-xl text-white/75 mt-4">
         Questions about the book, speaking invitations, or a travel story of your own to share — Sonny would love to hear from you.
       </p>
-      <!-- Contact form placeholder: wire to CF7 / your mail handler on the live build -->
-      <form action="#" class="mt-6 grid gap-4 max-w-md"
-            onsubmit="event.preventDefault(); this.querySelector('button').textContent='¡Gracias! Message sent.';">
-        <div>
-          <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-name">Your name</label>
-          <input id="ct-name" name="name" type="text" required placeholder="Jane Traveler"
-                 class="w-full rounded-xl px-4 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none">
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-email">Email address</label>
-          <input id="ct-email" name="email" type="email" required placeholder="you@example.com"
-                 class="w-full rounded-xl px-4 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none">
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-message">Message</label>
-          <textarea id="ct-message" name="message" rows="4" required placeholder="Hi Sonny — I just finished the book and..."
-                    class="w-full rounded-xl px-4 py-3 bg-white/10 border border-white/20 placeholder-white/40 text-white focus:border-gold focus:outline-none resize-y"></textarea>
-        </div>
-        <button type="submit" class="justify-self-start bg-gold hover:bg-[#c8912f] text-ink font-bold px-7 py-3 rounded-full transition-colors">
-          Send message
-        </button>
-      </form>
     </div>
 
-    <div class="fade-up md:text-right">
-      <p class="font-display text-xl text-white">Sonny Morin</p>
-      <p class="text-white/60 text-sm mt-1">Author · Travel Memoirist · Retired Spanish Teacher</p>
-      <div class="mt-6 space-y-2 text-white/80">
-        <p><a href="mailto:sonnymorin68@gmail.com" class="hover:text-goldsoft transition-colors">sonnymorin68@gmail.com</a></p>
-        <p><a href="tel:+15128551756" class="hover:text-goldsoft transition-colors">(512)&nbsp;855-1756</a></p>
+    <!-- Balanced two-card layout: contact details | form -->
+    <div class="grid md:grid-cols-5 gap-6 mt-12 items-stretch">
+
+      <!-- Contact details card -->
+      <div class="fade-up md:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-7 sm:p-8 flex flex-col">
+        <p class="font-display text-xl text-white">Sonny Morin</p>
+        <p class="text-white/60 text-sm mt-1">Author · Travel Memoirist · Retired Spanish Teacher</p>
+
+        <div class="mt-8 space-y-5 flex-1">
+          <a href="mailto:sonnymorin68@gmail.com" class="group flex items-start gap-4">
+            <span class="shrink-0 w-11 h-11 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs font-bold uppercase tracking-wider text-white/50">Email</span>
+              <span class="block text-white/90 group-hover:text-goldsoft transition-colors break-all">sonnymorin68@gmail.com</span>
+            </span>
+          </a>
+
+          <a href="tel:+15128551756" class="group flex items-start gap-4">
+            <span class="shrink-0 w-11 h-11 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs font-bold uppercase tracking-wider text-white/50">Phone</span>
+              <span class="block text-white/90 group-hover:text-goldsoft transition-colors">(512)&nbsp;855-1756</span>
+            </span>
+          </a>
+
+          <div class="flex items-start gap-4">
+            <span class="shrink-0 w-11 h-11 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs font-bold uppercase tracking-wider text-white/50">Based in</span>
+              <span class="block text-white/90">Central Texas, USA</span>
+            </span>
+          </div>
+        </div>
+
+        <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
+           target="_blank" rel="noopener"
+           class="mt-8 inline-flex justify-center bg-white/10 hover:bg-gold hover:text-ink border border-white/20 font-bold text-sm px-5 py-3 rounded-full transition-colors">
+          Buy on Amazon
+        </a>
       </div>
-      <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
-         target="_blank" rel="noopener"
-         class="inline-block mt-6 bg-white/10 hover:bg-gold hover:text-ink border border-white/20 font-bold text-sm px-5 py-2.5 rounded-full transition-colors">
-        Buy on Amazon
-      </a>
+
+      <!-- Form card -->
+      <div class="fade-up md:col-span-3 bg-white/5 border border-white/10 rounded-2xl p-7 sm:p-8">
+        <!-- Contact form placeholder: wire to CF7 / your mail handler on the live build -->
+        <form action="#" class="grid sm:grid-cols-2 gap-5"
+              onsubmit="event.preventDefault(); this.querySelector('button').textContent='¡Gracias! Message sent.';">
+          <div>
+            <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-name">Your name</label>
+            <input id="ct-name" name="name" type="text" required placeholder="Jane Traveler"
+                   class="w-full rounded-xl px-4 py-3 bg-ink/60 border border-white/20 placeholder-white/35 text-white focus:border-gold focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-email">Email address</label>
+            <input id="ct-email" name="email" type="email" required placeholder="you@example.com"
+                   class="w-full rounded-xl px-4 py-3 bg-ink/60 border border-white/20 placeholder-white/35 text-white focus:border-gold focus:outline-none">
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-subject">Subject</label>
+            <input id="ct-subject" name="subject" type="text" placeholder="About the book, an event invitation…"
+                   class="w-full rounded-xl px-4 py-3 bg-ink/60 border border-white/20 placeholder-white/35 text-white focus:border-gold focus:outline-none">
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-semibold text-white/70 mb-1.5" for="ct-message">Message</label>
+            <textarea id="ct-message" name="message" rows="6" required placeholder="Hi Sonny — I just finished the book and..."
+                      class="w-full rounded-xl px-4 py-3 bg-ink/60 border border-white/20 placeholder-white/35 text-white focus:border-gold focus:outline-none resize-y"></textarea>
+          </div>
+          <div class="sm:col-span-2 flex items-center justify-between gap-4 flex-wrap">
+            <p class="text-xs text-white/40">Sonny reads every message personally.</p>
+            <button type="submit" class="bg-gold hover:bg-[#c8912f] text-ink font-bold px-8 py-3 rounded-full transition-colors">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
