@@ -52,7 +52,7 @@ tailwind.config = {
 
 <!-- ======================= NAV ======================= -->
 <header class="sticky top-0 z-50 bg-sand/90 backdrop-blur border-b border-ocean/10">
-  <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-3 gap-3">
     <a href="#top" class="font-display text-lg sm:text-xl text-ocean">Sonny&nbsp;Morin</a>
     <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-ink/70">
       <a href="#book" class="hover:text-ocean transition-colors">The Book</a>
@@ -60,12 +60,33 @@ tailwind.config = {
       <a href="#author" class="hover:text-ocean transition-colors">The Author</a>
       <a href="#contact" class="hover:text-ocean transition-colors">Contact</a>
     </div>
-    <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
-       target="_blank" rel="noopener"
-       class="bg-gold hover:bg-[#c8912f] text-ink font-bold text-sm px-4 py-2 rounded-full transition-colors shadow-sm">
-      Buy on Amazon
-    </a>
+    <div class="flex items-center gap-2">
+      <a href="https://www.amazon.com/Adventures-Chicano-Spanish-Teacher-Mexico/dp/1969422270/ref=monarch_sidesheet_title"
+         target="_blank" rel="noopener"
+         class="bg-gold hover:bg-[#c8912f] text-ink font-bold text-sm px-4 py-2 rounded-full transition-colors shadow-sm whitespace-nowrap">
+        Buy on Amazon
+      </a>
+      <!-- Mobile menu toggle -->
+      <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"
+              class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full text-ocean hover:bg-ocean/10 transition-colors">
+        <svg id="icon-open" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/>
+        </svg>
+      </button>
+    </div>
   </nav>
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-ocean/10 bg-sand/95 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-5 py-3 flex flex-col text-base font-semibold text-ink/80">
+      <a href="#book" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">The Book</a>
+      <a href="#praise" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">Praise</a>
+      <a href="#author" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">The Author</a>
+      <a href="#contact" class="mobile-link py-3 hover:text-ocean transition-colors">Contact</a>
+    </div>
+  </div>
 </header>
 
 <!-- ======================= HERO — sea level ======================= -->
@@ -428,6 +449,23 @@ tailwind.config = {
 </footer>
 
 <script>
+/* Mobile menu toggle */
+(function () {
+  const btn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+  function setMenu(open) {
+    menu.classList.toggle('hidden', !open);
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', () => setMenu(menu.classList.contains('hidden')));
+  document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => setMenu(false)));
+})();
+
 /* Scroll-reveal, respects reduced motion */
 if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
   const io = new IntersectionObserver((entries) => {
