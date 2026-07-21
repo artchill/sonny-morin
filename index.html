@@ -58,6 +58,7 @@ tailwind.config = {
       <a href="#book" class="hover:text-ocean transition-colors">The Book</a>
       <a href="#praise" class="hover:text-ocean transition-colors">Praise</a>
       <a href="#author" class="hover:text-ocean transition-colors">The Author</a>
+      <a href="#media" class="hover:text-ocean transition-colors">Media</a>
       <a href="#contact" class="hover:text-ocean transition-colors">Contact</a>
     </div>
     <div class="flex items-center gap-2">
@@ -84,6 +85,7 @@ tailwind.config = {
       <a href="#book" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">The Book</a>
       <a href="#praise" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">Praise</a>
       <a href="#author" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">The Author</a>
+      <a href="#media" class="mobile-link py-3 border-b border-ocean/10 hover:text-ocean transition-colors">Media</a>
       <a href="#contact" class="mobile-link py-3 hover:text-ocean transition-colors">Contact</a>
     </div>
   </div>
@@ -221,44 +223,100 @@ tailwind.config = {
   </svg>
 </section>
 
-<!-- ======================= ABOUT THE AUTHOR — Virgin of Guadalupe background ======================= -->
+<!-- ======================= ABOUT THE AUTHOR — portrait + Virgin of Guadalupe background ======================= -->
 <section id="author" class="relative bg-ocean overflow-hidden">
 
-  <!-- Virgin of Guadalupe image, blended into the deep-teal background -->
+  <!-- Virgin of Guadalupe as a devotional wash across the whole section -->
   <div class="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
     <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/virgin%20of%20guadalupe.jpg"
          alt=""
-         class="absolute inset-y-0 right-0 h-full w-full md:w-1/2 object-contain object-center md:object-right opacity-20 md:opacity-95">
-    <!-- soft golden glow behind her -->
-    <div class="absolute inset-y-0 right-0 w-full md:w-1/2 bg-[radial-gradient(ellipse_at_center,rgba(224,164,57,0.18),transparent_65%)]"></div>
-    <!-- teal tint so the image sits in the site palette -->
-    <div class="absolute inset-0 bg-ocean/25 mix-blend-multiply"></div>
+         class="absolute inset-y-0 right-0 h-full w-full md:w-2/3 object-contain object-center md:object-right opacity-[0.12] md:opacity-25">
+    <div class="absolute inset-y-0 right-0 w-full md:w-2/3 bg-[radial-gradient(ellipse_at_center,rgba(224,164,57,0.14),transparent_65%)]"></div>
   </div>
-
-  <!-- gradient scrim so text stays readable over the artwork -->
-  <div class="absolute inset-0 bg-gradient-to-r from-ocean via-ocean/85 to-transparent pointer-events-none" aria-hidden="true"></div>
+  <!-- scrim to keep contrast -->
+  <div class="absolute inset-0 bg-gradient-to-b from-ocean/60 via-ocean/70 to-ocean/90 pointer-events-none" aria-hidden="true"></div>
 
   <div class="relative max-w-6xl mx-auto px-5 py-20 sm:py-28">
-    <div class="max-w-xl fade-up">
-      <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">El Autor · About the Author</p>
-      <h2 class="font-display text-3xl sm:text-4xl text-white">Sonny Morin</h2>
-      <p class="font-prose italic text-lg text-goldsoft/90 mt-2">Retired Spanish teacher · Travel memoirist · Central Texas</p>
-      <div class="font-prose text-lg sm:text-xl leading-relaxed text-white/90 mt-6 space-y-5">
-        <p>
-          Sonny Morin is a retired Spanish teacher and travel memoirist from Central Texas. Raised in a small South Texas town, he earned a Master of Arts in Teaching from Texas State University and dedicated his career to teaching Spanish — and to sharing his lifelong passion for language, history, and culture.
-        </p>
-        <p>
-          As a Chicano educator, he spent more than three decades exploring Mexico and destinations far beyond it, carrying his classroom's curiosity everywhere his backpack and dive gear could take him.
-        </p>
-        <p>
-          Since retiring in 2017, he has kept writing. He is currently at work on a second book — a reflection on his years in the classroom and the students who made them unforgettable.
-        </p>
+    <div class="grid md:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Bio -->
+      <div class="md:col-span-7 order-2 md:order-1 fade-up">
+        <p class="eyebrow text-xs font-bold uppercase text-goldsoft mb-3">El Autor · About the Author</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-white">Sonny Morin</h2>
+        <p class="font-prose italic text-lg text-goldsoft/90 mt-2">Retired Spanish teacher · Travel memoirist · Central Texas</p>
+        <div class="font-prose text-lg sm:text-xl leading-relaxed text-white/90 mt-6 space-y-5">
+          <p>
+            Sonny Morin is a retired Spanish teacher and travel memoirist from Central Texas. Raised in a small South Texas town, he earned a Master of Arts in Teaching from Texas State University and dedicated his career to teaching Spanish — and to sharing his lifelong passion for language, history, and culture.
+          </p>
+          <p>
+            As a Chicano educator, he spent more than three decades exploring Mexico and destinations far beyond it, carrying his classroom's curiosity everywhere his backpack and dive gear could take him.
+          </p>
+          <p>
+            Since retiring in 2017, he has kept writing. He is currently at work on a second book — a reflection on his years in the classroom and the students who made them unforgettable.
+          </p>
+        </div>
+        <a href="#contact" class="inline-block mt-8 font-semibold text-goldsoft hover:text-white underline underline-offset-4 decoration-gold/60 transition-colors">
+          Say hello — send Sonny a message →
+        </a>
       </div>
-      <a href="#contact" class="inline-block mt-8 font-semibold text-goldsoft hover:text-white underline underline-offset-4 decoration-gold/60 transition-colors">
-        Say hello — send Sonny a message →
-      </a>
+
+      <!-- Author portrait, framed like a photo print -->
+      <div class="md:col-span-5 order-1 md:order-2 fade-up flex justify-center">
+        <figure class="relative">
+          <div class="bg-sand p-3 pb-5 rounded-sm shadow-2xl shadow-ink/40 rotate-1">
+            <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/About%20the%20Author%20Pic.jpg"
+                 alt="Author Sonny Morin"
+                 class="w-56 sm:w-64 lg:w-72 h-auto rounded-sm object-cover" loading="lazy">
+            <figcaption class="font-prose italic text-center text-ink/70 text-sm mt-3">Sonny Morin</figcaption>
+          </div>
+          <!-- small gold corner accent -->
+          <span class="absolute -bottom-2 -left-2 w-16 h-16 border-b-2 border-l-2 border-gold/70 rounded-bl-lg" aria-hidden="true"></span>
+        </figure>
+      </div>
+
     </div>
   </div>
+</section>
+
+<!-- ======================= MEDIA / GALLERY ======================= -->
+<section id="media" class="bg-lagoon">
+  <div class="max-w-6xl mx-auto px-5 py-20 sm:py-24">
+    <div class="max-w-3xl fade-up">
+      <p class="eyebrow text-xs font-bold uppercase text-ocean mb-3">Momentos · Media &amp; Moments</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-ink">From the road, the reef &amp; the writing life</h2>
+      <p class="font-prose text-lg sm:text-xl text-ink/75 mt-4">
+        A glimpse behind the pages — snapshots from Sonny's travels, events, and the journeys that filled the book.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mt-10">
+      <figure class="fade-up group relative overflow-hidden rounded-xl shadow-lg shadow-ocean/15 ring-1 ring-ocean/10 bg-white">
+        <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/media1.JPG"
+             alt="Sonny Morin — travel and event photo" loading="lazy"
+             class="w-full h-56 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </figure>
+      <figure class="fade-up group relative overflow-hidden rounded-xl shadow-lg shadow-ocean/15 ring-1 ring-ocean/10 bg-white">
+        <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/media2.JPG"
+             alt="Sonny Morin — travel and event photo" loading="lazy"
+             class="w-full h-56 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </figure>
+      <figure class="fade-up group relative overflow-hidden rounded-xl shadow-lg shadow-ocean/15 ring-1 ring-ocean/10 bg-white">
+        <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/media3.JPG"
+             alt="Sonny Morin — travel and event photo" loading="lazy"
+             class="w-full h-56 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </figure>
+      <figure class="fade-up group relative overflow-hidden rounded-xl shadow-lg shadow-ocean/15 ring-1 ring-ocean/10 bg-white">
+        <img src="https://raw.githubusercontent.com/artchill/sonny-morin/main/media4.JPG"
+             alt="Sonny Morin — travel and event photo" loading="lazy"
+             class="w-full h-56 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </figure>
+    </div>
+  </div>
+
+  <!-- wave divider into the deep contact section -->
+  <svg class="block w-full text-ink -mb-px" viewBox="0 0 1440 70" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,45 L1440,70 L0,70 Z"/>
+  </svg>
 </section>
 
 <!-- ======================= CONTACT — deepest water ======================= -->
